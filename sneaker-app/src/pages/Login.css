@@ -1,0 +1,101 @@
+.rowC{display:flex; flex-direction:row;}
+.app
+{
+  background-color: #EEEFF0;
+}
+.container { 
+    background-color: #EEEFF0;
+
+    display: flex; 
+    padding: 5em;
+  } 
+   
+    .left-component { 
+    width: 50%; 
+  } 
+   
+    .right-component { 
+    width: 50%; 
+  } 
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.right-padding {
+    padding:5em;
+
+}
+
+.title {
+  font-family: 'Boxing';
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 64px;
+}
+
+.subtitle {
+  font-family: 'ExconReg';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.form {
+  font-family: 'ExconReg';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #808080;
+}
+
+.login-pad {
+  padding-top:2em;
+}
+
+.register-pad {
+  padding-top:1em;
+}
+
+.form-pad
+{
+  padding-top:3em;
+}
+
+@font-face {
+    font-family: 'Boxing';
+    src: local('Boxing'), url(../assets/fonts/Boxing-Regular.otf) format('opentype');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+  }
+
+  @font-face {
+    font-family: 'ExconReg';
+    src: local('ExconReg'), url(../assets/fonts/Excon-Regular.otf) format('opentype');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+  }
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #CCCCCC;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    border-radius:8px;
+    
+  }
+  
+input[type=text]:focus {
+    border: 3px solid #555;
+    border-radius:15px;
+  }
+
+.button 
+  { text-align:'center'; border-radius: '12px'; background-color: 'black'; border:'none'; color: 'white'; height:'48px' }
+

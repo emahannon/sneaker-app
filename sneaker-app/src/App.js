@@ -9,10 +9,21 @@ import {
   Navigate,
 } from "react-router-dom";
 
+import { useMediaQuery } from 'react-responsive';
+
 import Login from "./pages/Login";
+import Register from "./pages/Register";
+import MyCollection from "./pages/MyCollection";
+
+
+
+
 
 
 function App() {
+  const isMobileDevice = useMediaQuery({
+    query: "(min-device-width: 480px)",
+  });
   return (
     <>
     {/* This is the alias of BrowserRouter i.e. Router */}
@@ -25,6 +36,18 @@ function App() {
                 exact
                 path="/"
                 element={<Login />}
+            />
+
+            <Route
+                exact
+                path="/register"
+                element={<Register />}
+            />
+
+            <Route
+                exact
+                path="/mycollection"
+                element={<MyCollection />}
             />
 
             {/* If any route mismatches the upper 
